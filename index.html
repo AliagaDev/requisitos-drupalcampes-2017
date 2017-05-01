@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Metadrop | Abstraer requisitos de cliente en módulos para contribuir</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+
+		<!--<link rel="stylesheet" href="css/theme/black.css">-->
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+
+
+		<!-- Main theme white/black to print/show. -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/theme/white.css' : 'css/theme/black.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!-- Style -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="plugin/breadcrumb/breadcrumb.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<!-- @section -->
+				<section>
+					<h1 class="fontx5">Abstraer requisitos de cliente en módulos para contribuir</h1>
+					<br>
+					<h2>¡Bienvenidos!</h2>
+					<img src="assets/logocamp.svg" class="hide-pdf" width="400" />
+				</section>
+				<!-- @endsection -->
+
+				<!-- @section -->
+				<section class="metadrop" data-background-color="#834e2e">
+					<p class="fonts9">Cristian Aliaga</span></p>
+					<p class="fonts6">@AliagaDev && drupal.org/u/<span class="fontx5">crzdev</span></p>
+					<p class="fonts9">Front-end developer</p>
+					<img src="assets/metadrop-white.svg" class="hide-pdf" width="250" />
+				</section>
+				<!-- @endsection -->
+
+				<!-- @section -->
+				<section>
+					<h2>¿Requisito?</h2>
+					<img src="assets/requisitos.jpg"/>
+				</section>
+				<!-- @endsection -->
+
+				<!-- @section -->
+				<section>
+					<h2>¿Módulo para contribuir?</h2>
+					<img src="assets/share.jpg" width="600" />
+				</section>
+				<!-- @endsection -->
+
+				<!-- @section -->
+				<section>
+					<img src="assets/nuevoproyecto.png"/>
+				</section>
+				<!-- @endsection -->
+
+				<!-- @section -->
+				<section>
+					<img src="assets/contribcustom0.png"/>
+				</section>
+
+				<!-- @section -->
+				<section>
+					<img src="assets/contribcustom.png"/>
+				</section>
+				<!-- @endsection -->
+
+				<!-- @section -->
+				<section>
+					<h2>¿Requisito</h2>
+					<h2>=</h2>
+					<h2>Módulo para contribuir?</h2>
+				</section>
+				<!-- @endsection -->
+
+
+				<!-- @section -->
+				<section data-transition="slide-in fade-out">
+					<h2>Requisito</h2>
+					<img src="assets/requisito0.png" />
+				</section>
+				<!-- @endsection -->
+
+				<!-- @section -->
+				<section data-transition="fade-in fade-out">
+					<h2>Requisito</h2>
+					<img src="assets/requisito1.png" />
+				</section>
+				<!-- @endsection -->
+
+				<!-- @section -->
+				<section data-transition="fade-in fade-out">
+					<h2>Requisito</h2>
+					<img src="assets/requisito2.png" />
+				</section>
+				<!-- @endsection -->
+
+				<!-- @section -->
+				<section data-transition="fade-in fade-out">
+					<h2>Requisito</h2>
+					<img src="assets/requisito3.png" />
+				</section>
+				<!-- @endsection -->
+
+				<!-- @section -->
+				<section data-transition="fade-in slide-out">
+					<h2>Requisito</h2>
+					<img src="assets/requisito4.png" />
+				</section>
+				<!-- @endsection -->
+
+
+				<!-- @section -->
+				<section>
+					<h2>Módulo para contribuir</h2>
+					<p>Mostrar los campos de nodo en un pdf formato dos columnas.</p>
+					<p class="fragment" data-fragment-index="0"><span class="fonts8">1. Printer, email and PDF versions</span></p>
+					<p class="fragment" data-fragment-index="1"><span class="fonts8">2. Field Group Table</span></p>
+					<p class="fragment" data-fragment-index="2"><span class="fonts8">3. ¿Campos en formato dos columnas?</span></p>
+					
+				</section>
+				<!-- @endsection -->
+
+				<!-- @section -->
+				<section>
+					<h2>Field Group Table component</h2>
+					<img class="fragment" data-fragment-index="0" src="assets/tc.png" />
+					<br>
+					<img class="fragment" data-fragment-index="0" src="assets/check.png" width="80" />
+				</section>
+				<!-- @endsection -->
+
+				<!-- @section -->
+				<section>
+					<h2>Sandbox</h2>
+					<p>Mostrar el breadcrumb entre campos de un nodo.</p>
+					<img class="fragment" data-fragment-index="0" src="assets/sandbox.jpg" />
+					<p class="fragment" data-fragment-index="1">Breadcrumb extra field <img src="assets/check.png" width="50" style="margin: 0px 20px 0;" /></p>
+				</section>
+				<!-- @endsection -->
+
+				<!-- @section -->
+				<section>
+					<h2 class="fontx1">Parte contribuible | parte custom</h2>
+					<br>
+					<div class="fragment" data-fragment-index="0"><h3 class="fonts8">Mostrar el formulario de creación de un nodo dentro de la visualización de otro y ...<br><br>autocompletar si ya hay uno creado por ese usuario.</h3></div>
+				</section>
+				<!-- @endsection -->
+
+				<!-- @section -->
+				<section>
+					<h2>Node type Field</h2>
+					<img class="fragment" width="600" data-fragment-index="0" src="assets/ct.png" />
+					<img class="fragment" width="300" data-fragment-index="0" src="assets/ct2.png" />
+					<p class="fragment" data-fragment-index="0"><img src="assets/check.png" width="50" style="margin: 0px 20px 0;" /></p>
+				</section>
+				<!-- @endsection -->
+
+				<!-- @section -->
+				<section>
+					<h4>Solo necesitamos...</h4>
+					<h2 class="fragment" data-fragment-index="0">Perspectiva</h2>
+					<img class="fragment" data-fragment-index="0" src="assets/perspective.jpg" />
+				</section>
+				<!-- @endsection -->
+
+				<!-- @section -->
+				<section>
+					<h2>Ventajas</h2>
+					<table>
+						<tbody class="fonts6">
+							<tr><td class="fragment" data-fragment-index="0"><p>Facilitamos y agilizamos mantenimiento.</td></p></tr>
+							<tr><td class="fragment" data-fragment-index="1"><p>Delegamos el mantenimiento.</td></p></tr>
+							<tr><td class="fragment" data-fragment-index="2"><p>No necesariamente implica más tiempo de desarrollo.</td></p></tr>
+							<tr><td class="fragment" data-fragment-index="3"><p>Ayudamos a extender las funcionalidades base de Drupal.</p></td></tr>
+							<tr><td class="fragment" data-fragment-index="4"><p>Mejoramos nuestro perfil como desarrolladores.</p></td></tr>
+						</tbody>
+					</table>
+					<img class="fragment" data-fragment-index="4" src="assets/check.png" width="80" />
+				</section>
+				<!-- @endsection -->
+
+				<!-- @section -->
+				<section data-background-color="#834e2e">
+					<h2>¡Muchas gracias!</h2>
+					<h5>¿Preguntas?</h5>
+					<img src="assets/metadrop-white.svg" class="hide-pdf" width="150" />
+					<img src="assets/metadrop.svg" class="hide-not-pdf" width="150" />
+				</section>
+				<!-- @endsection -->
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/breadcrumb/breadcrumb.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>

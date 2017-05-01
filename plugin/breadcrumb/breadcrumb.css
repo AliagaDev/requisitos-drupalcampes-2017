@@ -1,0 +1,27 @@
+/*
+ * Additional style for breadcrumbs
+ */
+
+.reveal > .breadcrumb {
+  opacity: 0;
+  max-width: 35%;
+  width: 100%;
+  font-size: 18px !important;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 40;
+  max-width: 100%;
+  font-size: 12px;
+  line-height: 1;
+  font-family: Lato;
+  color: #fff;
+  background-color: rgb(85, 145, 189);
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 5px;
+  transition: opacity .25s ease-in-out;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

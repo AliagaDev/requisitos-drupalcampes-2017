@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+$fontx5: 1.5em;
+$fontx4: 1.4em;
+$fontx3: 1.3em;
+$fontx2: 1.2em;
+$fontx1: 1.1em;
+$fonts9: .9em;
+$fonts8: .8em;
+$fonts7: .7em;
+$fonts6: .6em;
+$fonts5: .5em;
+
+@mixin scrollbar($c1: #fff, $c2: #222) {
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 5px;
+    height: 5px;
+    background-color: $c1;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $c2;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $c1;
+  }
+}
+
+.reveal {
+  font-family: 'Lato', sans-serif;
+
+  section {
+    img {
+      border: 0;
+      background: none;
+      box-shadow: none;
+
+      &.white-bg {
+        background: white; 
+      }
+    }
+  }
+
+  .fontx5 { font-size: $fontx4; }
+  .fontx4 { font-size: $fontx4; }
+  .fontx3 { font-size: $fontx3; }
+  .fontx2 { font-size: $fontx2; }
+  .fontx1 { font-size: $fontx1; }
+  .fonts9 { font-size: $fonts9; }
+  .fonts8 { font-size: $fonts8; }
+  .fonts7 { font-size: $fonts7; }
+  .fonts6 { font-size: $fonts6; }
+  .fonts5 { font-size: $fonts5; }
+
+  pre {
+    code {
+      @include scrollbar;
+      padding: 15px;
+
+      &.nohighlight {
+        background: #3f3f3f;
+      }
+    }
+  }
+}
+
+.white-bg {
+  background: white; 
+}
+
+body.print-pdf {
+  .reveal pre code.nohighlight,
+  .hljs {
+    background: #f5f5f5;
+    color: #333;
+  }
+
+  .hljs-literal {
+    color: #93935c;
+  }
+
+  .hljs-keyword {
+    color: #e2a33a;
+  }
+
+  .hljs-variable, .hljs-template-variable, .hljs-attribute {
+    color: #5c59c0;
+  }
+
+  section:not(.has-dark-background) {
+    .hide-pdf {
+      display: none;
+    }  
+  }
+  section.has-dark-background {
+    .hide-not-pdf {
+      display: none;
+    }  
+  }
+  .breadcrumb {
+    display: none;
+  }
+}
+
+body:not(.print-pdf) {
+  section {
+    .hide-not-pdf {
+      display: none;
+    }  
+  }
+  .slide-background {
+    &[style*="metadrop-white.svg"],
+    &[style*="metadrop.svg"] {
+      background-image: none !important;
+    }
+  }
+}
+
+.reveal {
+  h1, h2, h3, h4, h5, h6 {
+    text-transform: none;
+  }
+}
+
+.reveal .slides section .fragment {
+  &.hide.visible:not(.current-fragment) {
+    display: none;
+  }
+}
