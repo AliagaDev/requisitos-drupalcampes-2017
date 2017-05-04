@@ -121,6 +121,7 @@ body:not(.print-pdf) {
 .reveal {
   h1, h2, h3, h4, h5, h6 {
     text-transform: none;
+    color: #be3272;
   }
 }
 
@@ -128,4 +129,28 @@ body:not(.print-pdf) {
   &.hide.visible:not(.current-fragment) {
     display: none;
   }
+}
+
+.reveal section .drupalcamp-label-pink {
+  background-color: #be3272;
+  color: white;
+  padding: 0.2em 1em;
+  margin:1em;
+  display: inline-block;
+}
+
+.reveal section .drupalcamp-label-blue {
+  background-color: #452ae2;
+  color: white;
+  padding: 0.2em 1em;
+}
+
+.reveal section .drupalcamp-label-blue h1 {
+  color: white;
+  font-size:1em;
+  margin: 0;
+}
+
+.left {
+  text-align: left;
 }

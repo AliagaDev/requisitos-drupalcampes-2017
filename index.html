@@ -20,7 +20,7 @@
 			var link = document.createElement( 'link' );
 			link.rel = 'stylesheet';
 			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/theme/white.css' : 'css/theme/black.css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/theme/white.css' : 'css/theme/white.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 
@@ -42,19 +42,29 @@
 		<div class="reveal">
 			<div class="slides">
 
-				<!-- @section -->
-				<section>
-					<h1 class="fontx5">Abstraer requisitos de cliente en módulos para contribuir</h1>
-					<br>
-					<h2>¡Bienvenidos!</h2>
-					<img src="assets/logocamp.svg" class="hide-pdf" width="400" />
+				<section data-background-transition="slide" data-background="assets/drupalcamp-bg.jpg" class="left">
+					<div class="left">
+						<img src="assets/logocamp.svg"/>
+					</div>
+					<div class="drupalcamp-label-blue left">
+						<h1>Abstraer requisitos de cliente en módulos para contribuir</h1>
+					</div>
+
+					<div class="drupalcamp-label-pink left fonts8">
+						Cristian Aliaga /
+						<span class="fonts6">@AliagaDev</span>
+					</div>
+
+					<div class="drupalcamp-label-blue left fonts8 inline-block" style="float:right">
+						#DrupalCampEs
+					</div>
+
 				</section>
-				<!-- @endsection -->
 
 				<!-- @section -->
 				<section class="metadrop" data-background-color="#834e2e">
 					<p class="fonts9">Cristian Aliaga</span></p>
-					<p class="fonts6">@AliagaDev && drupal.org/u/<span class="fontx5">crzdev</span></p>
+					<p class="fonts6">drupal.org/u/<span class="fontx5">crzdev - @AliagaDev</span></p>
 					<p class="fonts9">Front-end developer</p>
 					<img src="assets/metadrop-white.svg" class="hide-pdf" width="250" />
 				</section>
@@ -210,8 +220,12 @@
 				<section data-background-color="#834e2e">
 					<h2>¡Muchas gracias!</h2>
 					<h5>¿Preguntas?</h5>
-					<img src="assets/metadrop-white.svg" class="hide-pdf" width="150" />
-					<img src="assets/metadrop.svg" class="hide-not-pdf" width="150" />
+					<div>
+						Cristian Aliaga /
+						<span class="fonts6">@AliagaDev</span>
+					</div>
+					<img src="assets/metadrop-white.svg" class="hide-pdf" width="100" />
+					<img src="assets/metadrop.svg" class="hide-not-pdf" width="100" />
 				</section>
 				<!-- @endsection -->
 

@@ -74,7 +74,28 @@ body:not(.print-pdf) .slide-background[style*="metadrop-white.svg"], body:not(.p
   background-image: none !important; }
 
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
-  text-transform: none; }
+  text-transform: none;
+  color: #be3272; }
 
 .reveal .slides section .fragment.hide.visible:not(.current-fragment) {
   display: none; }
+
+.reveal section .drupalcamp-label-pink {
+  background-color: #be3272;
+  color: white;
+  padding: 0.2em 1em;
+  margin: 1em;
+  display: inline-block; }
+
+.reveal section .drupalcamp-label-blue {
+  background-color: #452ae2;
+  color: white;
+  padding: 0.2em 1em; }
+
+.reveal section .drupalcamp-label-blue h1 {
+  color: white;
+  font-size: 1em;
+  margin: 0; }
+
+.left {
+  text-align: left; }
